@@ -25,13 +25,12 @@
 }
 
 html{
+    width: 100vw;
     height: 100vh;
     background-color: var(--cor-fundo-1);
    
 }
-section{
-    height: 100vh;
-}
+
 main{
     padding: 0px 20px;
 }
@@ -74,6 +73,8 @@ a.button{
     text-shadow: 1px 1px 1px #00000025;
     transition: transform 400ms;
     box-shadow:1px 4px 4px 3px #0000004f;
+    height: 61px;
+    
 }
 a.button:hover{
     transform: scale(1.08,1.08);
@@ -96,7 +97,7 @@ header{
 }
 header > img{
     display: block;
-    width: 38%;
+    width: 300px;
     height:110%;
     border: 2px solid black;
     margin: auto;
@@ -133,5 +134,12 @@ header > img{
 #linguagens > nav {
     background-color: white;
     margin: 0px -20px;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+#linguagens > nav > a{
 
+    padding: 20px 40px;
+    background-color: blue;
 }
