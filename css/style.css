@@ -90,20 +90,22 @@ header{
     margin: 0px -20px;
     height: 30vh;
     border-bottom: 2px solid rgba(0, 0, 0, 0.719);
-    padding-top: 10px;
+    padding-top: 20px;
+    margin-bottom: 10%;
     
 }
 header > img{
     display: block;
-    width: 48%;
-    height:250px;
+    width: 38%;
+    height:110%;
     border: 2px solid black;
     margin: auto;
     background-color: #1A1A1A;
+    
 }
 
 #perfil > h1{
-    margin-top: 80px;
+    margin-bottom: 10px;
 }
 #perfil > p{
     text-align: center;
@@ -127,4 +129,9 @@ header > img{
     font-size: 1.1em;
     color: var(--cor-destaque-1);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.644);
+}
+#linguagens > nav {
+    background-color: white;
+    margin: 0px -20px;
+
 }
