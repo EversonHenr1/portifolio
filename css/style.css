@@ -90,13 +90,13 @@ header{
     margin: 0px -20px;
     height: 30vh;
     border-bottom: 2px solid rgba(0, 0, 0, 0.719);
-    padding-top: 70px;
+    padding-top: 10px;
     
 }
 header > img{
     display: block;
-    width: 43%;
-    height:200px;
+    width: 48%;
+    height:250px;
     border: 2px solid black;
     margin: auto;
     background-color: #1A1A1A;
@@ -114,10 +114,17 @@ header > img{
     width: 40vw;
     margin: 40px 0px;
     margin-left: 25px;
+    align-items: center;
 }
 #perfil > ul > li{
     font-size: 1.2em;
     margin: 15px 0px;
+    padding-top: 3px;
+   
     
 }
-
+#perfil > ul >li> i{
+    font-size: 1.1em;
+    color: var(--cor-destaque-1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.644);
+}
