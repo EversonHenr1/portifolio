@@ -101,6 +101,7 @@ header > img{
     margin: auto;
     background-color: #1A1A1A;
 }
+
 #perfil > h1{
     margin-top: 80px;
 }
@@ -108,12 +109,15 @@ header > img{
     text-align: center;
 }
 #perfil > ul {
-    margin: auto;
-    width: 50vw;
-    margin: 40px auto;
+    
+    list-style-position: outside;
+    width: 40vw;
+    margin: 40px 0px;
+    margin-left: 25px;
 }
 #perfil > ul > li{
     font-size: 1.2em;
     margin: 15px 0px;
+    
 }
 
