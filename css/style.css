@@ -21,22 +21,13 @@
     font-size: 1em;
     font-family: var(--fonte-normal-1);
 
-    
 }
 
-html{
-    width: 100vw;
+body,html{
     height: 100vh;
+    width: 100vw;
     background-color: var(--cor-fundo-1);
-   
 }
-
-main{
-    width: 100vw;
-    height: 100vh;
-    padding: 0px 20px;
-}
-
 
 p,i,li{
     color: white;
@@ -50,7 +41,6 @@ h1{
 p{
    font-size: 1.3em;
    text-align: center;
-
 }
 a{
     text-decoration: none;
@@ -59,14 +49,15 @@ abbr{
     text-decoration: none;
 }
 section{
-  
-    width: 100vw;
+    margin: auto;
+    width: 90vw;
+    height: 100vh;
 }
 
 
 /* botões */
 a.button{
-    background-color: var(--cor-fundo-1);
+    background-color: var(--cor-destaque-1);
     color: black;
     padding: 20px;
     display:block;
@@ -80,8 +71,7 @@ a.button{
     transition: transform 400ms;
     box-shadow:1px 4px 4px 3px #0000004f;
     height: 61px;
-    margin-bottom: 10%;
-    
+   
 }
 a.button:hover{
     transform: scale(1.08,1.08);
@@ -95,11 +85,11 @@ a.button:active{
 header{
     background-color: #D6B113;
     display: block;
-    margin: 0px -20px;
     height: 30vh;
     border-bottom: 2px solid rgba(0, 0, 0, 0.719);
     padding-top: 20px;
     margin-bottom: 5%;
+    
     
 }
 header > img{
@@ -142,7 +132,6 @@ header > img{
 
 #linguagens > nav {
     background-color: white;
-    margin: 0px -20px;
     display: flex;
     justify-content: center;
     gap:30px;
