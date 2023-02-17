@@ -80,7 +80,7 @@ a.button{
     transition: transform 400ms;
     box-shadow:1px 4px 4px 3px #0000004f;
     height: 61px;
-    margin-bottom: 30px;
+    margin-bottom: 10%;
     
 }
 a.button:hover{
