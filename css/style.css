@@ -139,13 +139,14 @@ nav > a{
     color:white!important;
     padding: 10px 0px;
     margin: 0px 20px;
+    transition: color 0.3s;
+    
 }
 nav > a:hover{
     color: var(--cor-destaque-1) !important;
     background-color: #111111;
     border-radius: 20px;
 }
-ul{
-    display: block;
-  
+nav > a:active{
+    background-color: #313030;
 }
