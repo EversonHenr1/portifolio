@@ -32,6 +32,8 @@ html{
 }
 
 main{
+    width: 100vw;
+    height: 100vh;
     padding: 0px 20px;
 }
 
@@ -56,6 +58,10 @@ a{
 abbr{
     text-decoration: none;
 }
+section{
+  
+    width: 100vw;
+}
 
 
 /* botões */
@@ -74,6 +80,7 @@ a.button{
     transition: transform 400ms;
     box-shadow:1px 4px 4px 3px #0000004f;
     height: 61px;
+    margin-bottom: 30px;
     
 }
 a.button:hover{
@@ -92,12 +99,12 @@ header{
     height: 30vh;
     border-bottom: 2px solid rgba(0, 0, 0, 0.719);
     padding-top: 20px;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     
 }
 header > img{
     display: block;
-    width: 300px;
+    width: 40%;
     height:110%;
     border: 2px solid black;
     margin: auto;
@@ -112,15 +119,16 @@ header > img{
     text-align: center;
 }
 #perfil > ul {
-    
+    max-width: 200px;
+    max-height: 200px;
     list-style-position: outside;
-    width: 40vw;
     margin: 40px 0px;
-    margin-left: 25px;
-    align-items: center;
+    margin-left: 24px;
+    
 }
 #perfil > ul > li{
-    font-size: 1.2em;
+    font-size: 1.1em;
+   
     margin: 20px 0px;
     padding-top: 3px;
    
@@ -131,6 +139,7 @@ header > img{
     color: var(--cor-destaque-1);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.644);
 }
+
 #linguagens > nav {
     background-color: white;
     margin: 0px -20px;
