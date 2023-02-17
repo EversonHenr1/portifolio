@@ -111,6 +111,7 @@ header > img{
 #perfil{
     padding-top: 80px;
     padding-left: 20px;
+    padding-right: 20px;
     overflow: hidden;
     height: 100vh;
     
@@ -131,5 +132,5 @@ nav > a{
 }
 ul{
     display: block;
-    max-width: 80vw;
+  
 }
