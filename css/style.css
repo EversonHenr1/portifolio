@@ -83,6 +83,7 @@ a.button{
     box-shadow:1px 4px 4px 3px #0000004f;
     height: 61px;
     margin-top: 85px;
+    
    
 }
 a.button:hover{
@@ -113,7 +114,7 @@ header > img{
     padding-left: 20px;
     padding-right: 20px;
     overflow: hidden;
-    height: 100vh;
+    height: 90vh;
     
 }
 #perfil > h1{
@@ -125,10 +126,24 @@ header > img{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.616);
 }
 nav{
-    background-color: white;
+   
+    text-align: center;
+    color: black;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
 }
 nav > a{
-    color:black !important;
+    display: block;
+    width: 30%;
+    color:white!important;
+    padding: 10px 0px;
+    margin: 0px 20px;
+}
+nav > a:hover{
+    color: var(--cor-destaque-1) !important;
+    background-color: #111111;
+    border-radius: 20px;
 }
 ul{
     display: block;
