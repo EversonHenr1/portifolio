@@ -82,7 +82,7 @@ a.button{
     transition: transform 400ms;
     box-shadow:1px 4px 4px 3px #0000004f;
     height: 61px;
-    margin-top: 45px;
+    margin-top: 85px;
    
 }
 a.button:hover{
@@ -105,17 +105,27 @@ header > img{
     background-color: #1A1A1A;
     margin: auto;
     width: 230px;
-    height: 175px;
+    height: 195px;
     border: 2.5px solid black;
 }
 #perfil{
-    padding: 50px  20px ;
+    padding-top: 80px;
+    padding-left: 20px;
     overflow: hidden;
+    height: 100vh;
+    
 }
 #perfil > h1{
     font-size: 1.75em;
+    margin-bottom: 10px;
 }
 #perfil >ul > li > i{
     color: var(--cor-destaque-1);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.616);
+}
+nav{
+    background-color: white;
+}
+nav > a{
+    color:black !important;
 }
