@@ -163,7 +163,7 @@ nav > a:active{
     background-color: var(--cor-fundo-1);
     border:  3px solid black;
     border-radius: 50%;
-    margin: 30px auto;
+    margin: 50px auto;
     max-width: 250px;
     height: 240px;
 }
@@ -186,6 +186,8 @@ nav > a:active{
     
 }
 #social > p{
+    min-width: 340px;
+
     position: absolute;
     bottom: 0px;
     left: 50%;
