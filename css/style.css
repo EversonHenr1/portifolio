@@ -80,6 +80,9 @@ a.button:active{
     transform: scale(1,1);
     box-shadow: inset 1px 1px 50px #00000052,1px 3px 3px 3px #00000036;
 } 
+a.button > i{
+    color: black;
+}
 /* All */
 header{
     background-color: #D6B113;
