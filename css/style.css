@@ -48,9 +48,7 @@ p{
 abbr{
     text-decoration: none;
 }
-i{
-   
-}
+
 li{
     font-size: 1.4em;
     padding-top: 3px;
@@ -60,7 +58,7 @@ li{
 }
 section{
     min-height:650px;
-    height: 90vh;
+    height: 100vh;
 }
 strong{
     color: var(--cor-destaque-1);
@@ -155,6 +153,9 @@ nav > a:hover{
 nav > a:active{
     background-color: #313030;
 }
+#social{
+    position: relative;
+}
 
 
 #social > img{
@@ -168,14 +169,10 @@ nav > a:active{
 }
 
 #container-social{
-    
     margin: 65px auto;
     text-align: center;
+}
 
-}
-#container-social > a > i{
-   
-}
 #container-social >a{
     border: 2px solid white;
     padding: 9px;
@@ -187,4 +184,8 @@ nav > a:active{
     margin: 0px 10px;
     margin-top: 30px;
     
+}
+#social > p {
+    position: absolute;
+    bottom: 0px;
 }
