@@ -185,7 +185,9 @@ nav > a:active{
     margin-top: 30px;
     
 }
-#social > p {
+#social > p{
     position: absolute;
     bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
 }
