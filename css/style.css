@@ -54,6 +54,16 @@ section{
 strong{
     color: var(--cor-destaque-1);
 }
+select{
+    display: block;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    height: 35px;
+    
+}
 /* botões */
 a.button{
     background-color: var(--cor-destaque-1);
