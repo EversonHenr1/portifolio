@@ -49,21 +49,21 @@ li{
 }
 section{
     min-height:650px;
-    height: 100vh;
+    min-height: 100vh;
 }
 strong{
     color: var(--cor-destaque-1);
 }
 select{
-    display: block;
-    margin: auto;
-    width: 80%;
+    background-color: var(--cor-fundo-1);
+    padding: 10px 40px;
     text-align: center;
-    background-color: #1A1A1A;
-    border-radius: 10px;
-    height: 35px;
-    
 }
+label{
+    color: #ceccccd2;
+}
+
+
 /* botões */
 a.button{
     background-color: var(--cor-destaque-1);
@@ -131,6 +131,7 @@ nav{
     align-items: center;
     box-shadow: 0px 0px 2px black;
     margin: 0px 10px;
+
 }
 nav > a{
     display: block;
@@ -148,6 +149,19 @@ nav > a:hover{
 nav > a:active{
     background-color: #313030;
 }
+section#linguagens > h1{
+    margin: 50px 0px;
+}
+#ling-img{
+    display: block;
+    margin: 80px auto;
+}
+
+
+
+
+
+
 #social{
     position: relative;
 }
