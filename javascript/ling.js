@@ -1,6 +1,7 @@
 function liguagens(valor){
     let imagem = document.getElementById("ling-img")
     let desc = document.getElementById("ling-descricao")
+    
     if(valor == "html"){
        imagem.src ='imagens/html-5.png'
        imagem.alt ='html-5'
