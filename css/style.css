@@ -169,8 +169,8 @@ section#linguagens > h1{
     height: 400px;
   }
 .container{
-    padding: 10px;
-    max-width: 1200px;
+   
+    max-width: 1000px;
     margin: 0 auto;
     margin-top: 120px;
    
@@ -178,12 +178,14 @@ section#linguagens > h1{
 
 .gallery-wrapper {
     overflow-x: auto;
+    
 }
 
 /* Esconder scrollbar */
 
 .gallery-wrapper::-webkit-scrollbar{
     display: none;
+
 }
 .gallery-wrapper {
     -ms-overflow-style: none; /* IE and Edge */
@@ -258,6 +260,7 @@ img.item{
  .gallery figure:hover > img{
     opacity: 1;
  }
+ 
 
  /*== Projetos FIM ==*/
 
