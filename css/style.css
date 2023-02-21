@@ -212,14 +212,47 @@ section#linguagens > h1{
 #container-proj > figure > a:active > i{
     color: #0a5223;
 }
-
-
+article#container-objetivo > h1{
+    margin-top: 50px;
+}
+article#container-objetivo{
+    padding: 0px 10px;
+}
+article#container-objetivo > aside{
+    height: 500px;
+    max-width: 400px;
+    background-image: url(../imagens/css.png);
+    border: 2.5px solid var(--cor-destaque-1);
+    border-bottom: 20px solid var(--cor-destaque-1);
+    margin: 30px auto;
+}
+article#container-objetivo > aside > div{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    transition: all 0.6s cubic-bezier(.39,.88,1,.33);
+}
+article#container-objetivo > aside > div:hover{
+    backdrop-filter: blur(0px);
+}
+article#container-objetivo > aside > div:hover >span{
+    display: none;
+}
+article#container-objetivo > aside > div >span{
+    display: block;
+    font-size: 2em;
+    width: 190px;
+    margin:auto;
+    padding-top: 200px;
+}
+article#container-objetivo > aside > div >span > i{
+    padding-left: 70px;
+    padding-top: 10px;
+    font-size: 2.3em;
+}
 #sobre > p{
     margin: 35px auto;
-}
-
-#social{
-    
 }
 #social > img{
     display: block;
