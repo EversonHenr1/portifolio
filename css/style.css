@@ -48,8 +48,8 @@ li{
     margin: 25px 0px;
 }
 section{
-    min-height:650px;
     min-height: 100vh;
+    
 }
 strong{
     color: var(--cor-destaque-1);
@@ -61,7 +61,6 @@ select{
     margin: 10px 0px;
 }
 label{
-   
     color: #ceccccd2;
 }
 
@@ -161,8 +160,8 @@ section#linguagens > h1{
 #ling-descricao{
     margin-bottom: 30px;
 }
-/* PROJETO */
-.gallery {
+/* /* /* PROJETO */
+/* .gallery {
     display: flex;
     flex-flow: row nowrap;
     gap: 30px;
@@ -178,21 +177,21 @@ section#linguagens > h1{
 
 .gallery-wrapper {
     overflow-x: auto;
-    
-}
+     */
+
 
 /* Esconder scrollbar */
 
-.gallery-wrapper::-webkit-scrollbar{
+/* .gallery-wrapper::-webkit-scrollbar{
     display: none;
 
 }
 .gallery-wrapper {
     -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
+     /* Firefox */
 
-#projetos figcaption{
+
+/* #projetos figcaption{
     text-align: center;
     margin-top: 10px;
     font-size: 1.1em;
@@ -213,11 +212,10 @@ img.item{
     display: block;
     height: 250px;
     width: 250px;
-}
-/* .play:hover{
+} */
+/* .play:hover{ */
     
-    border: 3px solid #1ed760;
-}
+    
 .play:active{
     border: 1px solid #1ed760;
     box-shadow: inset 40px 40px 10px rgba(0, 0, 0, 0.329);
@@ -234,9 +232,9 @@ img.item{
     font-size: 21px;
     margin-left: 115px;
     margin-bottom: 30px;
-} */
+} 
 
-.current-item {
+/* .current-item {
     opacity: 1;
     border: 2px solid #1ed760 ;
     margin-top:5px;
@@ -259,13 +257,44 @@ img.item{
  }
  .gallery figure:hover > img{
     opacity: 1;
- }
+ } */
  
 
  /*== Projetos FIM ==*/
 
 
 /* PROJETO FIM */
+#container-proj{
+    margin: 150px auto;
+    max-width: 1300px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    overflow-x: scroll;
+    padding: 30px;
+}
+#container-proj > figure{
+    height: 310px;
+    padding: 30px 40px;
+    box-shadow: 0px 1px 6px 1px #0000008c;
+    border-radius: 13px;
+}
+#container-proj > figure > figcaption{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+#container-proj > figure >img {
+    height: 200px;
+    display: block;
+    box-shadow:0px 1px 6px 1px #0000008c;
+    border-radius: 13px;
+    padding: 2px;
+}
+
+
 #sobre > p{
     margin: 35px auto;
 }
