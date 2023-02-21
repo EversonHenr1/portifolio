@@ -81,7 +81,7 @@ a.button{
     transition: transform 400ms;
     box-shadow:1px 4px 4px 3px #0000004f;
     height: 61px;
-    margin-top: 85px;
+    margin: 135px auto;
 }
 a.button:hover{
     transform: scale(1.08,1.08);
@@ -160,112 +160,12 @@ section#linguagens > h1{
 #ling-descricao{
     margin-bottom: 30px;
 }
-/* /* /* PROJETO */
-/* .gallery {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 30px;
-    height: 400px;
-  }
-.container{
-   
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 120px;
-   
-  }
 
-.gallery-wrapper {
-    overflow-x: auto;
-     */
-
-
-/* Esconder scrollbar */
-
-/* .gallery-wrapper::-webkit-scrollbar{
-    display: none;
-
+#projetos > h1{
+    margin: 30px 0px;
 }
-.gallery-wrapper {
-    -ms-overflow-style: none; /* IE and Edge */
-     /* Firefox */
-
-
-/* #projetos figcaption{
-    text-align: center;
-    margin-top: 10px;
-    font-size: 1.1em;
-}
-.item{
-    height: 260px;
-    width: 270px;
-    box-shadow: 2px 2px 6px 2px #0000009a;
-    border-radius: 7%;
-    cursor: pointer;
-    opacity: 0.5;
-    margin-top: 23px;
-    flex-shrink: 0;
-    transition: all 400ms ease-out , border 300ms ease;
-}
-
-img.item{
-    display: block;
-    height: 250px;
-    width: 250px;
-} */
-/* .play:hover{ */
-    
-    
-.play:active{
-    border: 1px solid #1ed760;
-    box-shadow: inset 40px 40px 10px rgba(0, 0, 0, 0.329);
-}
-.play{
-    border: 1px solid #1ed760;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.123);
-    transition: 450ms ease-in-out;
-    opacity: 0;
-    cursor:pointer;
-    border-radius: 50%;
-    background-color: #1ed760;
-    padding: 8px 13px 11px 15px;
-    font-size: 21px;
-    margin-left: 115px;
-    margin-bottom: 30px;
-} 
-
-/* .current-item {
-    opacity: 1;
-    border: 2px solid #1ed760 ;
-    margin-top:5px;
- }
- .current-item >img{
-    opacity: 1 ;
- }
- .gallery figure{
-    margin-top: 30px;
-    height: 360px;
-    width: 300px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.699);
- }
- .gallery figure:hover{
-    transition: 400ms;
-    opacity: 1;
- }
- .gallery figure:hover > img{
-    opacity: 1;
- } */
- 
-
- /*== Projetos FIM ==*/
-
-
-/* PROJETO FIM */
 #container-proj{
-    margin: 150px auto;
+    margin: 60px auto;
     max-width: 1300px;
     height: 450px;
     display: flex;
@@ -274,8 +174,9 @@ img.item{
     overflow-x: scroll;
     padding: 30px;
 }
+
 #container-proj > figure{
-    height: 310px;
+    height: 360px;
     padding: 30px 40px;
     box-shadow: 0px 1px 6px 1px #0000008c;
     border-radius: 13px;
@@ -292,6 +193,24 @@ img.item{
     box-shadow:0px 1px 6px 1px #0000008c;
     border-radius: 13px;
     padding: 2px;
+}
+#container-proj > figure > a{
+   display: block;
+   margin: 15px auto;
+   width: 30px;
+   transition:transform 300ms ease-in-out;
+}
+#container-proj > figure > a > i{
+    color: var(--cor-destaque-1); 
+}
+#container-proj > figure > a:hover{
+    transform: scale(1.1);
+}
+#container-proj > figure > a:active{
+    transform: scale(1);
+}
+#container-proj > figure > a:active > i{
+    color: #0a5223;
 }
 
 
@@ -346,13 +265,13 @@ img.item{
     margin-top: 30px;
     transition: transform 0.2s;
 }
-#social > p{
+/* #social > p{
     min-width: 340px;
     position: absolute;
     bottom: 0px;
     left: 50%;
     transform: translate(-50%);
-}
+} */
 
 
 
