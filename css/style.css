@@ -240,7 +240,7 @@ article#container-objetivo > aside > div{
     background: transparent;
     backdrop-filter: blur(10px);
     transition: all 0.6s cubic-bezier(.39,.88,1,.33);
-    border: 2px solid lightgray;
+    border: 2px solid black;
     position: relative;
 }
 article#container-objetivo > aside > div:hover{
