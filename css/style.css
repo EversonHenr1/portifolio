@@ -7,8 +7,8 @@
 
 :root{
     --cor-fundo-1:#1A1A1A;
-    --cor-destaque-2:#1ed760;
-    --cor-destaque-1:#006666;
+    --cor-destaque-1:#1ed760;
+    --cor-destaque-2:#006666;
     --fonte-normal-1:Gotham,Arial, Helvetica, sans-serif;
     --fonte-mono-1:Roboto Mono,'Courier New', Courier, monospace;
 }
@@ -221,10 +221,18 @@ article#container-objetivo{
 article#container-objetivo > aside{
     height: 500px;
     max-width: 400px;
-    background-image: url(../imagens/css.png);
-    border: 2.5px solid var(--cor-destaque-1);
-    border-bottom: 20px solid var(--cor-destaque-1);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    border: 2.5px solid var(--cor-destaque-2);
+    border-bottom: 10px solid var(--cor-destaque-2);
     margin: 30px auto;
+    box-shadow: 4px 5px 3px 2px rgba(0, 0, 0, 0.295);
+}
+aside > div > h2{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    padding-left: 30px;
+    border-left:10px solid var(--cor-destaque-2) ;
 }
 article#container-objetivo > aside > div{
     height: 100%;
@@ -232,6 +240,8 @@ article#container-objetivo > aside > div{
     background: transparent;
     backdrop-filter: blur(10px);
     transition: all 0.6s cubic-bezier(.39,.88,1,.33);
+    border: 2px solid lightgray;
+    position: relative;
 }
 article#container-objetivo > aside > div:hover{
     backdrop-filter: blur(0px);
@@ -244,12 +254,23 @@ article#container-objetivo > aside > div >span{
     font-size: 2em;
     width: 190px;
     margin:auto;
-    padding-top: 200px;
+    padding-top: 60px;
+}
+article#container-objetivo > aside > div > p{
+    padding-top: 40px;
+    transition: opacity 0.7s ease-in;
+    transition-delay: 1s;
+    opacity: 0;
+    text-shadow: 2px 2px 1px black;
+}
+article#container-objetivo > aside > div:hover > p{
+    opacity: 1;
 }
 article#container-objetivo > aside > div >span > i{
     padding-left: 70px;
     padding-top: 10px;
     font-size: 2.3em;
+    text-shadow: 3px 3px 1px var(--cor-destaque-2);
 }
 #sobre > p{
     margin: 35px auto;
