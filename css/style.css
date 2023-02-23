@@ -49,6 +49,7 @@ li{
 }
 section{
     min-height: 100vh; 
+    transition: width 1s ease;
 }
 strong{
     color: var(--cor-destaque-1);
@@ -156,6 +157,9 @@ nav > a:active{
 #ling-descricao{
     margin-bottom: 30px;
 }
+#linguagens > div{
+    display: none;
+}
 /* section 4*/
 #container-proj{
     margin: 60px auto;
@@ -225,6 +229,7 @@ aside > div > h2{
     border-left:10px solid var(--cor-destaque-2) ;
 }
 article#container-objetivo > aside > div{
+    
     height: 100%;
     width: 100%;
     background: transparent;
@@ -240,7 +245,7 @@ article#container-objetivo > aside > div:hover >span{
     display: none;
 }
 article#container-objetivo > aside > div >span{
-    display: block;
+    display: none;
     font-size: 2em;
     width: 190px;
     margin:auto;
@@ -250,7 +255,7 @@ article#container-objetivo > aside > div > p{
     padding-top: 40px;
     transition: opacity 0.7s ease-in;
     transition-delay: 1s;
-    opacity: 0;
+    opacity: 1;
     text-shadow: 2px 2px 1px black;
 }
 article#container-objetivo > aside > div:hover > p{

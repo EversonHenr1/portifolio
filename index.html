@@ -35,9 +35,9 @@
                 <a href="#social" target="_self">Social</a>
             </nav> 
             <h1>Linguagens</h1>
-            <p>
+            <p id="select">
                 <label for="ling">Linguagens: </label>
-                <select name="linguagens" id="ling" onchange="liguagens(this.value)">
+                <select name="linguagens" id="ling" onchange="linguagens(this.value)">
                     <option value=""></option>
                     <option value="html">Html</option>
                     <option value="css">Css</option>
@@ -48,6 +48,15 @@
                     <option value="java">Java</option>
                 </select>
             </p>
+            <div>
+                <img src="imagens/html-5 32px.png" alt="botão html" onclick="linguagens('html')">
+                <img src="imagens/css.png" alt="botão css" onclick="linguagens('css')">
+                <img src="imagens/js.png" alt="botão Javascript" onclick="linguagens('js')">
+                <img src="imagens/letra-c.png" alt="botão Linguagem C" onclick="linguagens('c')">
+                <img src="imagens/python.png" alt="botão Python" onclick="linguagens('python')">
+                <img src="imagens/java.png" alt="botão Java" onclick="linguagens('java')">
+                <img src="imagens/servidor-sql.png" alt="botão SQL" onclick="linguagens('sql')">
+            </div>
             <img src="imagens/seta-para-cima.png" alt="Seta para Cima" id="ling-img">
             <p id="ling-descricao">Por gentiliza, selecione uma opção acima para <strong>descobrir mais </strong>conteúdo. </p>
        </section> 

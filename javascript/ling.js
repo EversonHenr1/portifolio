@@ -1,4 +1,4 @@
-function liguagens(valor){
+function linguagens(valor){
     let imagem = document.getElementById("ling-img")
     let desc = document.getElementById("ling-descricao")
     
