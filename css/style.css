@@ -2,8 +2,9 @@
 @import url('https://fonts.cdnfonts.com/css/gotham');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
 
-/* Configurações Gerais */
 /* Mobile first */
+
+/* Configurações Gerais */
 
 :root{
     --cor-fundo-1:#1A1A1A;
@@ -12,8 +13,6 @@
     --fonte-normal-1:Gotham,Arial, Helvetica, sans-serif;
     --fonte-mono-1:Roboto Mono,'Courier New', Courier, monospace;
 }
-
-/* Configurações padrões */
 *{
     margin: 0px;
     padding: 0px;
@@ -33,6 +32,7 @@ h1{
     color: var(--cor-destaque-1);
     text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.534);
     font-size: 1.65em;
+    margin: 80px 0px;
 }
 p{
     max-width: 97vw;
@@ -48,8 +48,7 @@ li{
     margin: 25px 0px;
 }
 section{
-    min-height: 100vh;
-    
+    min-height: 100vh; 
 }
 strong{
     color: var(--cor-destaque-1);
@@ -63,8 +62,6 @@ select{
 label{
     color: #ceccccd2;
 }
-
-
 /* botões */
 a.button{
     background-color: var(--cor-destaque-1);
@@ -81,7 +78,7 @@ a.button{
     transition: transform 400ms;
     box-shadow:1px 4px 4px 3px #0000004f;
     height: 61px;
-    margin: 135px auto;
+    margin: 85px auto;
 }
 a.button:hover{
     transform: scale(1.08,1.08);
@@ -94,7 +91,7 @@ a.button:active{
 a.button > i{
     color: black;
 }
-/* All */
+/* section 1*/
 header{
     background-color: #D6B113;
     height: 150px;
@@ -117,13 +114,15 @@ header > img{
     min-height: 100vh !important;
 }
 #perfil > h1{
-    font-size: 1.75em;
+    margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 1.75em;
 }
 #perfil >ul > li > i{
     color: var(--cor-destaque-1);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.616);
 }
+/* section 2*/
 nav{
     text-align: center;
     color: #111111;
@@ -132,7 +131,6 @@ nav{
     align-items: center;
     box-shadow: 0px 0px 2px black;
     margin: 0px 10px;
-
 }   
 nav > a{
     display: block;
@@ -150,9 +148,7 @@ nav > a:hover{
 nav > a:active{
     background-color: #313030;
 }
-section#linguagens > h1{
-    margin: 50px 0px;
-}
+/* section 3*/
 #ling-img{
     display: block;
     margin: 120px auto;
@@ -160,10 +156,7 @@ section#linguagens > h1{
 #ling-descricao{
     margin-bottom: 30px;
 }
-
-#projetos > h1{
-    margin: 30px 0px;
-}
+/* section 4*/
 #container-proj{
     margin: 60px auto;
     max-width: 1300px;
@@ -174,7 +167,6 @@ section#linguagens > h1{
     overflow-x: scroll;
     padding: 30px;
 }
-
 #container-proj > figure{
     height: 360px;
     padding: 30px 40px;
@@ -212,16 +204,14 @@ section#linguagens > h1{
 #container-proj > figure > a:active > i{
     color: #0a5223;
 }
-article#container-objetivo > h1{
-    margin-top: 50px;
-}
+/* section 5*/
 article#container-objetivo{
     padding: 0px 10px;
 }
 article#container-objetivo > aside{
     height: 550px;
     max-width: 400px;
-    background-color: rgba(34,193,195,1);
+    background-color: brown;
     border: 2.5px solid var(--cor-destaque-2);
     border-bottom: 10px solid var(--cor-destaque-2);
     margin: 30px auto;
@@ -272,6 +262,7 @@ article#container-objetivo > aside > div >span > i{
     font-size: 2.3em;
     text-shadow: 3px 3px 1px var(--cor-destaque-2);
 }
+/* section 6*/
 #sobre > p{
     margin: 35px auto;
 }
@@ -283,9 +274,6 @@ article#container-objetivo > aside > div >span > i{
     margin: 70px auto;
     max-width: 250px;
     height: 240px;
-}
-#social > h1{
-    margin-top: 250px;
 }
 #container-social{
     margin:auto;
@@ -304,7 +292,6 @@ article#container-objetivo > aside > div >span > i{
 #container-social > a:active{
     transform: scale(0.9);
 }
-
 #container-social >a{
     border: 2px solid #ffffff80;
     background-color: #131212;
@@ -320,7 +307,4 @@ article#container-objetivo > aside > div >span > i{
 }
  #social > p{
    margin-top: 150px;
-} 
-
-
-
+}
