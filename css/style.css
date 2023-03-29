@@ -23,6 +23,7 @@
 html,body{
     height:100vh;
     background-color: #1A1A1A;
+    transition: width 3s ease-in-out;
 }
 a{
     text-decoration: none;
@@ -119,7 +120,11 @@ header > img{
     margin-bottom: 10px;
     font-size: 1.75em;
 }
+#perfil >ul{
+    list-style: none;
+}
 #perfil >ul > li > i{
+    margin-right: 30px;
     color: var(--cor-destaque-1);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.616);
 }
