@@ -13,11 +13,13 @@
 </head>
 <body>
     <main>
+         
          <header>
             <img src="#" alt="Foto de Perfil">
         </header>
         <section id="perfil">
-            <h1>Everson Henrique da Silva</h1>
+            <h1>Everson Henrique da Silva <i class="fa fa-code" aria-hidden="true" style="display: none;"></i></h1>
+            <span id="bar"  style="display: none;"><abbr title="Analise e Desenvolvimento de Sistemas" id="ads"></abbr>|</span>
             <p><abbr title="Analise e Desenvolvimento de Sistemas">&lt; Estudante ADS &gt;</abbr></p>
             <ul>
                 <li><i class=" fa fa-user-o "></i>Solteiro</li>
@@ -36,6 +38,10 @@
                 <a href="#social" target="_self">Social</a>
             </nav> 
             <h1>Linguagens</h1>
+            
+            
+            <img src="imagens/seta-para-baixo.png" alt="Seta para Baixo" id="ling-img">
+            <p id="ling-descricao">Por gentiliza, selecione uma opção abaixo para <strong>consumir mais</strong> conteúdo. </p>
             <p id="select">
                 <label for="ling">Linguagens: </label>
                 <select name="linguagens" id="ling" onchange="linguagens(this.value)">
@@ -49,9 +55,6 @@
                     <option value="java">Java</option>
                 </select>
             </p>
-            
-            <img src="imagens/seta-para-cima.png" alt="Seta para Cima" id="ling-img">
-            <p id="ling-descricao">Por gentiliza, selecione uma opção acima para <strong>descobrir mais </strong>conteúdo. </p>
             <div>
                 <img src="imagens/html-5 64x.png" alt="botão html" onclick="linguagens('html')">
                 <img src="imagens/css 64x.png" alt="botão css" onclick="linguagens('css')">
@@ -65,26 +68,14 @@
         <section id="projetos">
             <h1>Projetos</h1>
             <div id="container-proj">
-                <figure><img src="imagens/html-5.png" alt="Tumb Projeto1" class="item_P"><figcaption>projeto 1</figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
-                <figure><img src="imagens/java.png" alt="Tumb Projeto2" class="item_P"><figcaption>projeto 2</figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
-                <figure><img src="imagens/letra-c.png" alt="Tumb Projeto3" class="item_P"><figcaption>projeto 3</figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
-                <figure><img src="imagens/python.png" alt="Tumb Projeto4" class="item_P"><figcaption>projeto 4</figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
-                <figure><img src="imagens/java.png" alt="Tumb Projeto5" class="item_P"><figcaption>projeto 5</figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
+                <figure><img src="imagens/html-5.png" alt="Tumb Projeto1" class="item_P"><figcaption>projeto 1<p style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quidem vero vel, optio tempora error consequuntur obcaecati aspernatur laboriosam odit. Veniam ab dolor nesciunt voluptas eos non accusantium vitae?</p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
+                <figure><img src="imagens/java.png" alt="Tumb Projeto2" class="item_P"><figcaption>projeto 2<p style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quidem vero vel, optio tempora error consequuntur obcaecati aspernatur laboriosam odit. Veniam ab dolor nesciunt voluptas eos non accusantium vitae?</p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
+                <figure><img src="imagens/letra-c.png" alt="Tumb Projeto3" class="item_P"><figcaption>projeto 3<p style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quidem vero vel, optio tempora error consequuntur obcaecati aspernatur laboriosam odit. Veniam ab dolor nesciunt voluptas eos non accusantium vitae?</p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
+                <figure><img src="imagens/python.png" alt="Tumb Projeto4" class="item_P"><figcaption>projeto 4<p style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quidem vero vel, optio tempora error consequuntur obcaecati aspernatur laboriosam odit. Veniam ab dolor nesciunt voluptas eos non accusantium vitae?</p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
+                <figure><img src="imagens/java.png" alt="Tumb Projeto5" class="item_P"><figcaption>projeto 5<p style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quidem vero vel, optio tempora error consequuntur obcaecati aspernatur laboriosam odit. Veniam ab dolor nesciunt voluptas eos non accusantium vitae?</p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
             </div>
         </section>   
-        <section id="sobre">
-            <h1>Conheça Mais</h1>
-            <p>Tenho 19 anos e dentro do mercado de trabalho consegui desenvolver algumas habilidades como, <strong>Comunicação assertiva</strong>, <strong>Pro-atividade</strong>, <strong>Resiliencia</strong>; essas habilidade foram criadas durante meu ultimo emprego na transportadora <strong>Via Pajuçara</strong> e <strong>Supermercado X</strong>; ambos foram oferecidos opotunidades para dar seguimento como colaborador efetivo, mas devido divergencia de horarios não pude prosseguir.</p>
-            <p>Mas minha vocação sempre foi voltada para a areá de TI, na qual realizo  faculdade de <strong>Analise e Desenvolvimento de Sistemas</strong>; como apresentado acima, tenho conhecimento de algumas linguagens de programação e também domino alguns programas como: <strong>Word</strong>, <strong>Excel</strong>, <strong>Power Point</strong> e <strong>Canvas</strong>; e sigo buscando mais conhecimento para alcançar meus objetivos.</p>
-            <a href="dowloads/cv.rar" download="dowloads/cv.rar" type="	application/x-rar-compressed" class="button">Dowload Curriculo <i class="fa fa-download" aria-hidden="true"></i></a>
-            <article id="container-objetivo">
-                <h1>Objetivos</h1>
-                <aside>
-                    <div><p>Terá uma imagem de fundo com uma legenda</p><span>Toque Aqui <i class="fa fa-hand-pointer-o" aria-hidden="true"></i></span> <h2>Objetivos</h2></div>
-                </aside>
-            </article>
-        </section>
-        <section id="social">
+         <section id="social"> 
             <h1>Redes</h1>
             <img src="" alt="Foto de Perfil 2">
             <div id="container-social">
@@ -93,16 +84,37 @@
                 <a href="https://www.instagram.com/everson_henr1/" target="_blank" rel="external"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/everson-henrique-da-silva/" target="_blank" rel="external"><i class="fa fa-linkedin"></i></a>
             </div>
-            <p>Portifolio inspirado no aplicativo <strong>Spotify</strong>.</p>
+            
+        </section>  
+        <section id="sobre">
+            <div>
+                <h1>Conheça Mais</h1>
+                <p>Tenho 19 anos e dentro do mercado de trabalho consegui desenvolver algumas habilidades como, <strong>Comunicação assertiva</strong>, <strong>Pro-atividade</strong>, <strong>Resiliencia</strong>; essas habilidade foram criadas durante meu ultimo emprego na transportadora <strong>Via Pajuçara</strong> e <strong>Supermercado X</strong>; ambos foram oferecidos opotunidades para dar seguimento como colaborador efetivo, mas devido divergencia de horarios não pude prosseguir.</p>
+                <br>
+                <p>Mas minha vocação sempre foi voltada para a areá de TI, na qual realizo  faculdade de <strong>Analise e Desenvolvimento de Sistemas</strong>; como apresentado acima, tenho conhecimento de algumas linguagens de programação e também domino alguns programas como: <strong>Word</strong>, <strong>Excel</strong>, <strong>Power Point</strong> e <strong>Canvas</strong>; e sigo buscando mais conhecimento para alcançar meus objetivos.</p>
+            <a href="dowloads/cv.rar" download="dowloads/cv.rar" type="	application/x-rar-compressed" class="button">Dowload Curriculo <i class="fa fa-download" aria-hidden="true"></i></a>
+            </div>
+            
+            <article id="container-objetivo">
+                <h1>Objetivos</h1>
+                <aside>
+                    <div><p>Terá uma imagem de fundo com uma legenda</p><span><i class="fa fa-hand-pointer-o" aria-hidden="true"></i></span> <h2>Objetivos</h2></div>
+                </aside>
+            </article>
         </section>
+        
     </main>
     <script src="javascript/ling.js"></script>
+    <!--  
+    
+        Icones Utilizados
+
     <a href="https://www.flaticon.com/br/icones-gratis/html" title="html ícones">Html ícones criados por Pixel perfect - Flaticon</a>
     <a href="https://www.flaticon.com/br/icones-gratis/css" title="css ícones">Css ícones criados por Pixel perfect - Flaticon</a>
     <a href="https://www.flaticon.com/br/icones-gratis/javascript" title="javascript ícones">Javascript ícones criados por Freepik - Flaticon</a>
     <a href="https://www.flaticon.com/br/icones-gratis/letra-c" title="letra c ícones">Letra c ícones criados por Hight Quality Icons - Flaticon</a>
     <a href="https://www.flaticon.com/br/icones-gratis/pitao" title="pitão ícones">Pitão ícones criados por Freepik - Flaticon</a>
     <a href="https://www.flaticon.com/br/icones-gratis/java" title="java ícones">Java ícones criados por Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/sql" title="sql ícones">Sql ícones criados por juicy_fish - Flaticon</a>
+    <a href="https://www.flaticon.com/br/icones-gratis/sql" title="sql ícones">Sql ícones criados por juicy_fish - Flaticon</a> -->
 </body>
 </html>

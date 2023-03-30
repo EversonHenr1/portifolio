@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.cdnfonts.com/css/gotham');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Chivo+Mono:wght@300&family=Kanit:wght@600;900&family=Roboto:wght@100;400;500&display=swap');
 
 /* Mobile first */
 
@@ -9,7 +10,7 @@
 :root{
     --cor-fundo-1:#1A1A1A;
     --cor-destaque-1:#1ed760;
-    --cor-destaque-2:#006666;
+    --cor-destaque-2:#17C3B2;
     --fonte-normal-1:Gotham,Arial, Helvetica, sans-serif;
     --fonte-mono-1:Roboto Mono,'Courier New', Courier, monospace;
 }
@@ -59,7 +60,7 @@ select{
     background-color: var(--cor-fundo-1);
     padding: 10px 20vw;
     text-align: center;
-    margin: 10px 0px;
+    margin: 100px 0px;
 }
 label{
     color: #ceccccd2;
@@ -155,11 +156,17 @@ nav > a:active{
     background-color: #313030;
 }
 /* section 3*/
+#linguagens > h1{   
+    margin-bottom: 30px;
+}
 #ling-img{
     display: block;
     margin: 120px auto;
 }
 #ling-descricao{
+    display: block;
+    margin: auto;
+    max-width: 98vw;
     margin-bottom: 30px;
 }
 #linguagens > div{
@@ -178,22 +185,23 @@ nav > a:active{
 }
 #container-proj > figure{
     height: 360px;
-    padding: 30px 40px;
     box-shadow: 0px 1px 6px 1px #0000008c;
     border-radius: 13px;
+    padding: 30px;
 }
 #container-proj > figure > figcaption{
     margin-top: 30px;
     text-align: center;
     font-size: 1.2em;
     color: #ffffff;
+
 }
 #container-proj > figure >img {
     height: 200px;
     display: block;
     box-shadow:0px 1px 6px 1px #0000008c;
     border-radius: 13px;
-    padding: 2px;
+    padding: 5px;
 }
 #container-proj > figure > a{
    display: block;
@@ -218,11 +226,12 @@ article#container-objetivo{
     padding: 0px 10px;
 }
 article#container-objetivo > aside{
-    height: 550px;
+    height: 590px;
     max-width: 400px;
-    background-color: brown;
-    border: 2.5px solid var(--cor-destaque-2);
-    border-bottom: 10px solid var(--cor-destaque-2);
+    background-color: rgb(226, 121, 121);
+    border: 7px solid var(--cor-destaque-2);
+    border-bottom: 20px solid var(--cor-destaque-2);
+    
     margin: 30px auto;
     box-shadow: 4px 5px 3px 2px rgba(0, 0, 0, 0.295);
 }
@@ -231,7 +240,8 @@ aside > div > h2{
     bottom: 5%;
     left: 10%;
     padding-left: 30px;
-    border-left:10px solid var(--cor-destaque-2) ;
+    border-left:15px solid var(--cor-destaque-2) ;
+   
 }
 article#container-objetivo > aside > div{
     
@@ -240,14 +250,17 @@ article#container-objetivo > aside > div{
     background: transparent;
     backdrop-filter: blur(10px);
     transition: all 0.6s cubic-bezier(.39,.88,1,.33);
-    border: 2px solid black;
+    border: 2px solid white;
     position: relative;
+    border-bottom: none;
+    
 }
 article#container-objetivo > aside > div:hover{
     backdrop-filter: blur(0px);
 }
 article#container-objetivo > aside > div:hover >span{
-    display: none;
+    transition-delay: 0.4s;
+    opacity: 0;
 }
 article#container-objetivo > aside > div >span{
     display: none;
@@ -255,11 +268,12 @@ article#container-objetivo > aside > div >span{
     width: 190px;
     margin:auto;
     padding-top: 60px;
+    transition-delay: 0.3s;
 }
 article#container-objetivo > aside > div > p{
     padding-top: 40px;
-    transition: opacity 0.7s ease-in;
-    transition-delay: 1s;
+    transition: opacity 0.2s ease-in;
+    transition-delay: 0.3s;
     opacity: 1;
     text-shadow: 2px 2px 1px black;
 }
@@ -267,10 +281,11 @@ article#container-objetivo > aside > div:hover > p{
     opacity: 1;
 }
 article#container-objetivo > aside > div >span > i{
-    padding-left: 70px;
+    padding-left: 50px;
     padding-top: 10px;
     font-size: 2.3em;
     text-shadow: 3px 3px 1px var(--cor-destaque-2);
+
 }
 /* section 6*/
 #sobre > p{
@@ -315,6 +330,7 @@ article#container-objetivo > aside > div >span > i{
     margin-top: 30px;
     transition: transform 0.2s;
 }
- #social > p{
-   margin-top: 150px;
+ #social{
+   min-height: 70vh;
+   font-family: 'Chivo Mono', monospace;
 }

@@ -35,4 +35,46 @@ function linguagens(valor){
         imagem.alt = 'Seta para cima'
         desc.innerHTML = 'Por gentiliza, selecione uma opção acima para  <strong>descobrir mais </strong>conteúdo.'
     }
+    
+    
 } 
+
+const el = document.querySelector("#ads")   // Seletor
+const text = "< Estudante ADS >" // Texto inserido
+const interval = 200    // Intervalo
+const bar = document.querySelector("#bar")
+
+
+function showText(el,text,interval,bar,pos){ //Função que puxa as constantes
+
+  
+
+    const char = text.split("").reverse();  // Coloca o texto de cima para baixo e inverte a ordem
+    
+    const typer = setInterval(() => {   //Criar um intervalor e mostrar o texto
+
+        if(!char.length ){
+            return clearInterval(typer);
+        }
+        
+
+        const next = char.pop(); // Pega o ultimo elemento e atribui
+
+        el.innerHTML += next; // Coloca o valor no p
+        
+       
+    },interval)
+
+    
+   
+}
+
+showText(el,text,interval)
+
+
+
+    
+
+    
+
+
