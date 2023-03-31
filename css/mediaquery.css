@@ -21,8 +21,7 @@
         border-width: 3px;
     }
     header > img{
-        width: 280px;
-        height: 240px;
+       
         border: 3px solid black;
     }
     #perfil >ul{
@@ -91,42 +90,24 @@
    #sobre{
     background-image: linear-gradient(to top ,#1A1A1A ,#0f0f0f  ,#1A1A1A );
    }
-   
-   /* section social*/
-
-   #social{
-    position: relative;
-   }
-   #social>img{
+   #perfil > ul > li{
+    font-size: 2em !important;
     
-    width: 300px;
-    margin:130px  auto;
+}
 
-   }
-   #container-social{
-    margin-right: 100px;
-    position: absolute;
-    top: 100px;
-    right: 60px;
-    text-align: right;
-    width: 100px;
-    float: right;
-    max-height: auto;
-   }
-   #container-social a {
-    height: 60px;
-    padding: 3px;
-    text-align: center;
-   }
-   #container-social i {
-    font-size: 0.8em;
-   }
+   
+
    
    
     
 }
 
 @media screen and (min-width:768px){
+    nav >a{
+        font-size: 1em !important;
+    }
+  
+    
     article#container-objetivo > aside > div>span{
         display: block;
     }
@@ -151,6 +132,8 @@
         cursor: pointer;
     }
     #linguagens > div > img:hover{
+       
+
         box-shadow: 1px 1px 1px 1px rgba(3, 3, 3, 0.623);
     }
 
@@ -185,10 +168,45 @@
     padding: 10px;
    }
    #container-proj>figure:hover> img {
-    transition: box-shadow 500ms;
+    transition: 500ms  all ;
     box-shadow: 2px 3px 1px 1px black;
    }
-    
+   footer{
+    background-image: linear-gradient(#1A1A1A 10%,black);
+   }
+   /* expericias */
+   #formacao > ul
+   {
+    max-width:80vw;
+    margin: auto;
+   }
+   #formacao > ul >li {
+    font-size: 1.8em;
+   }
+   #profissional > ul{
+    max-width: 80vw;
+    margin: auto;
+   }
+   #profissional > ul >li {
+    font-size: 1.8em;
+   }
+   #ling-descricao{
+    width: 80vw !important;
+   }
+   #ling-descricao > a{
+    text-decoration: underline;
+   }
+   article#container-objetivo > aside{
+    background-image: url(../imagens/keyborad.png);
+    background-position: center top;
+}
+article#container-objetivo > aside > div:hover > p{
+    opacity: 1;
+}
+article#container-objetivo > aside > div:hover{
+    backdrop-filter: blur(0.5px);
+}
+   
 }
 
 @keyframes degrade1 { 
@@ -219,6 +237,9 @@
 @media screen and (min-width:992px)  {
     
     /* Padrao */
+    a.button > i {
+        color: var(--cor-destaque-1);
+    }
     a.button{
         background-color: transparent;
         border: 2px solid var(--cor-destaque-1);
@@ -243,8 +264,7 @@
     header >img {
         margin: unset;
         border: 3px solid black;
-        width: 250px;
-        height: 250px;
+       
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.384);
         margin-left: 10vw;
     }
@@ -261,6 +281,7 @@
         position: absolute;
         top: 150px;
         left: 36vw;
+        margin:  unset;
     }
     #perfil > h1 > i{
         display: inline !important;   
@@ -369,7 +390,7 @@
     max-height: 280px;
     max-width: auto;
     box-shadow: 5px 9px 1px 1px black;
-    padding: 10px;
+    
    }
    
    
@@ -395,24 +416,123 @@
     max-width: 380px;
    }
    #sobre{
-
-    margin-bottom: 500px;
+    height: 1000px;
+    margin-bottom: 100px;
    }
-   #social{
-    height: 700px !important;
-   }
+   
    #sobre>div> a:hover>i{
     color: #1A1A1A;
     transition: 600ms;
    }
    
-   #social > h1{
-    display: block;
-    width: 200px;
-    margin: auto;
-    margin-top: 100px;
+   
+   footer > a:hover{
+
+    border: 1px solid #ffffffa6;
+    background-color: #1A1A1A;
+
    }
+   footer > a:hover > i {
+    transition: 600ms;
+    color: #ffffffa6 !important;
+   }
+   #experiencia{
+    background-color: white;
+    padding: 3px;
+    width: 70vw;
+    margin: auto;
+   }
+ #experiencia li{
+    color: white !important;
+    text-shadow: 1px 1px 1px  black;
+   }
+   #experiencia strong{
+    color: var(--cor-destaque-1);
+   }
+   
+   #formacao{
+    padding: 50px;
+    background-color: #1A1A1A;
+   
+   }
+   #formacao > ul > li{
+    text-decoration: none;
+   }
+   #formacao > ul > li > p{
+    display: block;    
+   }
+   #formacao li{
+   
+    padding: 5px;
+    list-style: none;
+    border: 1px solid white;
+    color: var(--cor-destaque-1);
+    text-decoration: none;
+    text-align: center;
+  
+}
+   #profissional{
+    padding: 50px;
+    background-color: #1A1A1A;
+   }
+   #profissional > ul > li{
+    text-decoration: none;
+   }
+   #profissional > ul > li > p{
+    display: block;    
+   }
+   #profissional > ul >li{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    color: var(--cor-destaque-2);
+    border: 1px solid white;
+  
+}
+#experiencia > div{
+    display: none;
+}
+#experiencia > h1{
+    display: block !important;
+    background-color: #1A1A1A;
+    margin: unset !important; 
+    padding: 20px 80px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+ 
+
+}
+#experiencia > h1:hover{
+    text-decoration: underline;
+    transition: box-shadow 600ms ease-in-out;
+   box-shadow: 1px 3px 23px black;
+}
+#experiencia > h1 >i {
+    margin-left: 50px;
+    text-align: right;
+
+}
+#experiencia {
+    margin: 100px auto;
+    background-color: black;
+    border-bottom: 7px solid black;
+    border-radius: 5px;
+    min-height: max-content;
+    width: max-content;
+
+}
+#experiencia >div>ul>li{
+    cursor: default;
+}
+#experiencia >div>ul>li:hover{
+    transition: transform 0.4s ease-in-out;
+    transform: scale(1.1 ,1.1);
+}
     
+
    
    
 }

@@ -23,6 +23,7 @@
 }
 html,body{
     height:100vh;
+    
     background-color: #1A1A1A;
     transition: width 3s ease-in-out;
 }
@@ -60,7 +61,8 @@ select{
     background-color: var(--cor-fundo-1);
     padding: 10px 20vw;
     text-align: center;
-    margin: 100px 0px;
+    margin-bottom: 100px;
+    margin-top: 50px;
 }
 label{
     color: #ceccccd2;
@@ -105,8 +107,8 @@ header > img{
     display: block;
     background-color: #1A1A1A;
     margin: auto;
-    width: 230px;
-    height: 195px;
+    width: 250px;
+    height: 252px;
     border: 2.5px solid black;
 }
 #perfil{
@@ -117,17 +119,19 @@ header > img{
     min-height: 100vh !important;
 }
 #perfil > h1{
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 10px;
     font-size: 1.75em;
 }
 #perfil >ul{
     list-style: none !important;
+    font-size: 0.7em;
 }
 #perfil >ul > li > i{
     margin-right: 30px;
     color: var(--cor-destaque-1);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.616);
+   
 }
 /* section 2*/
 nav{
@@ -146,6 +150,7 @@ nav > a{
     padding: 10px 0px;
     margin: 0px 20px;
     transition: color 0.3s;
+    font-size: 0.7em;
 }
 nav > a:hover{
     color: var(--cor-destaque-1) !important;
@@ -159,6 +164,9 @@ nav > a:active{
 #linguagens > h1{   
     margin-bottom: 30px;
 }
+#labelL{
+    margin: unset;
+}
 #ling-img{
     display: block;
     margin: 120px auto;
@@ -168,7 +176,9 @@ nav > a:active{
     margin: auto;
     max-width: 98vw;
     margin-bottom: 30px;
+   line-height: 1.7em;
 }
+
 #linguagens > div{
     display: none;
 }
@@ -187,7 +197,7 @@ nav > a:active{
     height: 360px;
     box-shadow: 0px 1px 6px 1px #0000008c;
     border-radius: 13px;
-    padding: 30px;
+    padding: 19px;
 }
 #container-proj > figure > figcaption{
     margin-top: 30px;
@@ -221,6 +231,92 @@ nav > a:active{
 #container-proj > figure > a:active > i{
     color: #0a5223;
 }
+
+/* section experiencia */
+#formacao h2{
+    font-size: 1em;
+}
+#formacao h3{
+    font-size: 0.9em;
+}
+#formacao p {
+    transition:  display 200ms ease-in;
+    font-size: 1.1em;
+    margin: 25px 0px;
+}
+#formacao strong{
+    color: var(--cor-destaque-1);
+}
+#formacao ul{
+    list-style: circle;
+    margin: auto;
+    padding: 0px 10px;
+    list-style-position:inside;
+}
+#formacao li{
+    
+    transition:  padding 300ms ease-in;
+    
+    color: rgba(235, 233, 233, 0.651);
+    text-decoration: underline;
+}
+#formacao li:hover{
+   
+    padding: 5px;
+    list-style: none;
+    border: 1px solid ;
+    color: var(--cor-destaque-1);
+    text-decoration: none;
+    text-align: center;
+  
+}
+
+#formacao ul >li:hover> p {
+    display: block;
+}
+#profissional strong{
+    color: var(--cor-destaque-2);
+    font-size: 0.9em;
+}
+#profissional > ul {
+    list-style: circle;
+    list-style-position: inside;
+    padding: 0px 10px;
+}
+#profissional > ul >li {
+    color: rgba(235, 233, 233, 0.651);
+    padding: 5px;
+    text-decoration: underline;
+    
+
+
+}
+#profissional > ul >li:hover >p {
+    display: block;
+    
+}
+#profissional > ul >li:hover{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    color: var(--cor-destaque-2);
+    border: 1px solid ;
+  
+}
+#profissional > ul > li >p{
+    transition:  display 200ms ease-in;
+    text-align: unset;
+    display: none;
+    font-size: 0.8em;
+    margin: 10px 0px;
+}
+
+#formacao ul >li > p{
+    display: none;
+    font-size: 0.8em;
+    text-align: unset;    
+}
+
 /* section 5*/
 article#container-objetivo{
     padding: 0px 10px;
@@ -244,6 +340,8 @@ aside > div > h2{
    
 }
 article#container-objetivo > aside > div{
+
+    
     
     height: 100%;
     width: 100%;
@@ -255,9 +353,7 @@ article#container-objetivo > aside > div{
     border-bottom: none;
     
 }
-article#container-objetivo > aside > div:hover{
-    backdrop-filter: blur(0px);
-}
+
 article#container-objetivo > aside > div:hover >span{
     transition-delay: 0.4s;
     opacity: 0;
@@ -270,16 +366,21 @@ article#container-objetivo > aside > div >span{
     padding-top: 60px;
     transition-delay: 0.3s;
 }
+article#container-objetivo > aside{
+    background-color: #1A1A1A;
+}
 article#container-objetivo > aside > div > p{
     padding-top: 40px;
     transition: opacity 0.2s ease-in;
     transition-delay: 0.3s;
     opacity: 1;
     text-shadow: 2px 2px 1px black;
+    line-height: 1.3em;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-article#container-objetivo > aside > div:hover > p{
-    opacity: 1;
-}
+
 article#container-objetivo > aside > div >span > i{
     padding-left: 50px;
     padding-top: 10px;
@@ -291,46 +392,43 @@ article#container-objetivo > aside > div >span > i{
 #sobre > p{
     margin: 35px auto;
 }
-#social > img{
-    display: block;
-    background-color: var(--cor-fundo-1);
-    border:  3px solid black;
-    border-radius: 50%;
-    margin: 70px auto;
-    max-width: 250px;
-    height: 240px;
-}
-#container-social{
-    margin:auto;
+
+
+/* footer */
+footer{
+    background-color: #0000005d;
     text-align: center;
+    height: max-content;
+    padding-top: 10px;
+    margin-top: 150px;
 }
-#container-social > a >i{
-    color: #ffffff36;
+footer > h1{
+    color: white;
+    margin: unset;
+    margin: 30px;
+    font-size: 1.3em;
+    margin-bottom: 30px;
 }
-#container-social > a:hover >i{
-    color: white !important;
+
+
+footer > a{
+   padding: 10px;
+    background-color: #ffffffa6;
+    margin-right: 15px;
+    font-size: 1.3em;
+    border-radius: 6px;
+   
 }
-#container-social > a:hover{
-    background-color:#ffffff36;
-    border-color: white;
+
+footer > a:nth-of-type(1){
+    padding: 10px 13px;
 }
-#container-social > a:active{
-    transform: scale(0.9);
+footer > a> i{
+    color: #1A1A1A;
 }
-#container-social >a{
-    border: 2px solid #ffffff80;
-    background-color: #131212;
-    padding: 9px;
-    font-size: 1.9em;
-    display: inline-block;
-    height: 53px;
-    width: 60px;
-    border-radius: 50%;
-    margin: 0px 10px;
-    margin-top: 30px;
-    transition: transform 0.2s;
-}
- #social{
-   min-height: 70vh;
-   font-family: 'Chivo Mono', monospace;
+footer > div{
+    padding: 5px;
+    font-size: 0.8em;
+    margin-top: 18px;
+    background-color: #0e0d0d9a;
 }

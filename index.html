@@ -15,7 +15,7 @@
     <main>
          
          <header>
-            <img src="#" alt="Foto de Perfil">
+            <img src="imagens/perfil.jpg" alt="Foto de Perfil">
         </header>
         <section id="perfil">
             <h1>Everson Henrique da Silva <i class="fa fa-code" aria-hidden="true" style="display: none;"></i></h1>
@@ -25,7 +25,7 @@
                 <li><i class=" fa fa-user-o "></i>Solteiro</li>
                 <li><i class=" fa fa-calendar-o"></i>04/12/2003</li>
                 <li><i class=" fa fa-phone"></i>(11) 95410-8044</li>
-                <li style="line-height: 20px;"><i class="fa fa-envelope-o"></i>eversonhenriquepro781 @gmail.com</li>
+                <li style="line-height: 20px;"><i class="fa fa-envelope-o"></i>eversonhenriquepro781@gmail.com</li>
                 <li><i class=" fa fa-map-marker"></i>07161-460</li>
                 
             </ul>
@@ -35,7 +35,7 @@
             <nav>
                 <a href="#projetos" target="_self">Projetos</a>|
                 <a href="#sobre" target="_self" >Sobre</a>|
-                <a href="#social" target="_self">Social</a>
+                <a href="#experiencia" target="_self" onclick="parecer('visivel')">Experiencias</a>
             </nav> 
             <h1>Linguagens</h1>
             
@@ -43,7 +43,7 @@
             <img src="imagens/seta-para-baixo.png" alt="Seta para Baixo" id="ling-img">
             <p id="ling-descricao">Por gentiliza, selecione uma opção abaixo para <strong>consumir mais</strong> conteúdo. </p>
             <p id="select">
-                <label for="ling">Linguagens: </label>
+                <label for="ling" id="labelL">Linguagens: </label>
                 <select name="linguagens" id="ling" onchange="linguagens(this.value)">
                     <option value=""></option>
                     <option value="html">Html</option>
@@ -51,7 +51,7 @@
                     <option value="js">Java Script</option>
                     <option value="c">Linguagem C</option>
                     <option value="sql">Banco de dados SQL</option>
-                    <option value="python">Python</option>
+                    <option value="xml">Xml</option>
                     <option value="java">Java</option>
                 </select>
             </p>
@@ -60,7 +60,7 @@
                 <img src="imagens/css 64x.png" alt="botão css" onclick="linguagens('css')">
                 <img src="imagens/js 64x.png" alt="botão Javascript" onclick="linguagens('js')">
                 <img src="imagens/letra-c 64x.png" alt="botão Linguagem C" onclick="linguagens('c')">
-                <img src="imagens/python 64x.png" alt="botão Python" onclick="linguagens('python')">
+                <img src="imagens/xml 64x.png" alt="botão Xml" onclick="linguagens('xml')">
                 <img src="imagens/java 64x.png" alt="botão Java" onclick="linguagens('java')">
                 <img src="imagens/servidor-sql 64x.png" alt="botão SQL" onclick="linguagens('sql')">
             </div>
@@ -68,22 +68,70 @@
         <section id="projetos">
             <h1>Projetos</h1>
             <div id="container-proj">
-                <figure><img src="imagens/html-5.png" alt="Tumb Projeto1" class="item_P"><figcaption>projeto 1<p style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quidem vero vel, optio tempora error consequuntur obcaecati aspernatur laboriosam odit. Veniam ab dolor nesciunt voluptas eos non accusantium vitae?</p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
-                <figure><img src="imagens/java.png" alt="Tumb Projeto2" class="item_P"><figcaption>projeto 2<p style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quidem vero vel, optio tempora error consequuntur obcaecati aspernatur laboriosam odit. Veniam ab dolor nesciunt voluptas eos non accusantium vitae?</p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
-                <figure><img src="imagens/letra-c.png" alt="Tumb Projeto3" class="item_P"><figcaption>projeto 3<p style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quidem vero vel, optio tempora error consequuntur obcaecati aspernatur laboriosam odit. Veniam ab dolor nesciunt voluptas eos non accusantium vitae?</p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
-                <figure><img src="imagens/python.png" alt="Tumb Projeto4" class="item_P"><figcaption>projeto 4<p style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quidem vero vel, optio tempora error consequuntur obcaecati aspernatur laboriosam odit. Veniam ab dolor nesciunt voluptas eos non accusantium vitae?</p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
-                <figure><img src="imagens/java.png" alt="Tumb Projeto5" class="item_P"><figcaption>projeto 5<p style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quidem vero vel, optio tempora error consequuntur obcaecati aspernatur laboriosam odit. Veniam ab dolor nesciunt voluptas eos non accusantium vitae?</p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
+                <figure><img src="imagens/z.png" alt="Projeto Zoologico Guarulhos" class="item_P" style="background-color: #0D4161;"><figcaption>Zoologico de<br>Guarulhos<p style="display: none;">Um dos meus projetos durante a faculdade foi desenvolver um site reformulado para <strong>Zoologico de Guarulhos</strong>.<br> Linguagem Utilizandas : <strong>HTML, CSS</strong></p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
+                <figure><img src="imagens/academia (1).png" alt="Projeto Cp Fitness" class="item_P" style="background-image: linear-gradient(brown 50%,rgb(10, 10, 10) 50%);"><figcaption>Cp Fitness<p style="display: none; ">outro projeto desenvolvido por mim foi: <strong>Site Cp Fitness</strong> , utilizando: <strong>HTML, Css, Javascript, SQL</strong> o ultimo sendo programado com a ferramenta <strong>xamp</strong></p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
+                <figure><img src="imagens/z_refurmulado.png" alt="Projeto Zoologico Guarulhos (reformulado)" style="background-color: #007C76;" class="item_P"><figcaption>Zoo<br>(reformulado)<p style="display: none;">Como durante a criação do site anterior não possuia os devidos conhecimentos de programação estou desenvolvendo uma <strong>reformulação</strong> do mesmo, onde quesitos de responsividade e interação serão mais desenvolvidos</p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
+                <figure><img src="imagens/cp_reformulado.png" alt="Projeto Cp Fitness (reformulado)" style="background-color: rgb(240, 14, 14);" class="item_P"><figcaption>Cp Fitness<br>(reformulado)<p style="display: none;">Esse nova versão do site terá elementos de <strong>responsividade</strong> é mais informações do <strong>banco de dados</strong> , além de um <strong>design melhorado</strong></p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
+                <figure><img src="imagens/letra-m.png" alt="Projeto5 Multiplica" class="item_P" style="background-color: #2AAFB3;"><figcaption>Multiplica<p style="display: none;">Atualmente estou densenvolvendo um aplicativo movél de finanças, utilizando: <strong>Java , XML</strong> no <strong>Android Studio</strong> o mesmo já se encontra com todas as intefaces graficas funcionando</p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
             </div>
         </section>   
-         <section id="social"> 
-            <h1>Redes</h1>
-            <img src="" alt="Foto de Perfil 2">
-            <div id="container-social">
-                <a href="https://www.facebook.com/eversoHenrique" target="_blank" rel="external"><i class="fa fa-facebook"></i></a>
-                <a href="https://github.com/EversonHenr1/" target="_blank" rel="external"><i class="fa fa-github"></i></a>
-                <a href="https://www.instagram.com/everson_henr1/" target="_blank" rel="external"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/everson-henrique-da-silva/" target="_blank" rel="external"><i class="fa fa-linkedin"></i></a>
-            </div>
+         <section id="experiencia">
+            <h1 id="btn_show" onclick="parecer()" style="display: none;">Formações e Experiencias  <i class="fa fa-minus-circle" aria-hidden="true"></i></h1>
+            <div id="formacao" >
+                <h1 >Formação Acâdemica </i> </h1>
+                <ul>
+                    <li>
+                        Ensino Superior - Tecnólogo
+                        <p><strong>Centro universitario Eniac</strong></p>
+                        <p>Analise e desenvolvimento de sistemas - TI - Conclusão 2024</p>
+                    </li>
+                    <li>
+                        Ensino Médio - Completo
+                        <p><strong>Escola Estadual Prof.a Idaliana Ladeira Ferreira</strong>
+                        </p>
+                    </li>
+                    <h1>Cursos Extracurriculares</h1>
+                    <li>
+                        Microsoft Word
+                        <p>Instituição <strong>Microlins</strong> - (Concluido)
+                        </p>
+                    </li>
+                    <li>
+                        Microsoft Excel
+                        <p>Instituição <strong>Microlins</strong> - (Concluido)
+                        </p>
+                    </li>
+                    <li>
+                        Departamento Pessoal
+                        <p>Instituição <strong>Microlins</strong> - (Concluido)
+                        </p>
+                    </li>
+                    <li>
+                        Rotinas Administrativas
+                        <p>Instituição <strong>Microlins</strong> - (Concluido)
+                        </p>
+                    </li>
+                </ul>
+            </div> 
+            <div id="profissional" >
+                <h1>Experiencias Profissionais</h1>
+                <ul>
+                    <li>
+                        Via Pajuçara
+                        <p><strong>Cargo: </strong> Jovem aprendiz administrativo</p>
+                        <p><strong>Período: </strong> 21/02/2022 a 13/01/2023   (Concluido)</p>
+                    </li>
+                    <li>
+                        X supermercado
+                        <p><strong>Cargo: </strong>Auxiliar geral Estagiario</p>
+                        <p><strong>Período: </strong> 13/04/2021 a 31/12/2021   (Concluido)</p>
+                    </li>
+                </ul>
+                
+
+            </div> 
+            
+            
             
         </section>  
         <section id="sobre">
@@ -92,18 +140,33 @@
                 <p>Tenho 19 anos e dentro do mercado de trabalho consegui desenvolver algumas habilidades como, <strong>Comunicação assertiva</strong>, <strong>Pro-atividade</strong>, <strong>Resiliencia</strong>; essas habilidade foram criadas durante meu ultimo emprego na transportadora <strong>Via Pajuçara</strong> e <strong>Supermercado X</strong>; ambos foram oferecidos opotunidades para dar seguimento como colaborador efetivo, mas devido divergencia de horarios não pude prosseguir.</p>
                 <br>
                 <p>Mas minha vocação sempre foi voltada para a areá de TI, na qual realizo  faculdade de <strong>Analise e Desenvolvimento de Sistemas</strong>; como apresentado acima, tenho conhecimento de algumas linguagens de programação e também domino alguns programas como: <strong>Word</strong>, <strong>Excel</strong>, <strong>Power Point</strong> e <strong>Canvas</strong>; e sigo buscando mais conhecimento para alcançar meus objetivos.</p>
-            <a href="dowloads/cv.rar" download="dowloads/cv.rar" type="	application/x-rar-compressed" class="button">Dowload Curriculo <i class="fa fa-download" aria-hidden="true"></i></a>
+            <a href="dowloads/curriculo.rar" download="dowloads/curriculo.rar" type="	application/x-rar-compressed" class="button">Dowload Curriculo <i class="fa fa-download" aria-hidden="true"></i></a>
             </div>
             
             <article id="container-objetivo">
                 <h1>Objetivos</h1>
                 <aside>
-                    <div><p>Terá uma imagem de fundo com uma legenda</p><span><i class="fa fa-hand-pointer-o" aria-hidden="true"></i></span> <h2>Objetivos</h2></div>
+                    <div><p>possuindo tais habilidades tenho como objetivo, embarcar em uma nova oportunidade onde possa me aperfeiçoar cada vez mais na area de (TI)  como um Estagiario ou Junior.  </p><span><i class="fa fa-hand-pointer-o" aria-hidden="true"></i></span> <h2>Objetivos</h2></div>
                 </aside>
             </article>
         </section>
         
+        
     </main>
+    <footer>
+        <h1>
+            Social
+        </h1>
+                <a href="https://www.facebook.com/eversoHenrique" target="_blank" rel="external"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/EversonHenr1/" target="_blank" rel="external"><i class="fa fa-github"></i></a>
+                <a href="https://www.instagram.com/everson_henr1/" target="_blank" rel="external"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/everson-henrique-da-silva/" target="_blank" rel="external"><i class="fa fa-linkedin"></i></a>
+               
+        <div>
+            <p>Portifolio inspirado  no site <strong>Spotify</strong></p>
+        </div>
+        
+    </footer>
     <script src="javascript/ling.js"></script>
     <!--  
     
@@ -115,6 +178,13 @@
     <a href="https://www.flaticon.com/br/icones-gratis/letra-c" title="letra c ícones">Letra c ícones criados por Hight Quality Icons - Flaticon</a>
     <a href="https://www.flaticon.com/br/icones-gratis/pitao" title="pitão ícones">Pitão ícones criados por Freepik - Flaticon</a>
     <a href="https://www.flaticon.com/br/icones-gratis/java" title="java ícones">Java ícones criados por Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/sql" title="sql ícones">Sql ícones criados por juicy_fish - Flaticon</a> -->
+    <a href="https://www.flaticon.com/br/icones-gratis/sql" title="sql ícones">Sql ícones criados por juicy_fish - Flaticon</a>
+    <a href="https://www.flaticon.com/br/icones-gratis/academia" title="academia ícones">Academia ícones criados por Aldo Cervantes - Flaticon</a>
+    <a href="https://www.flaticon.com/br/icones-gratis/formato-xml" title="formato xml ícones">Formato xml ícones criados por riajulislam - Flaticon</a>
+    <a href="https://www.flaticon.com/br/icones-gratis/letra-m" title="letra-m ícones">Letra-m ícones criados por popo2021 - Flaticon</a>
+    <a href="https://www.flaticon.com/br/icones-gratis/z" title="z ícones">Z ícones criados por Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/br/icones-gratis/trabalho-em-progresso" title="trabalho em progresso ícones">Trabalho em progresso ícones criados por Aranagraphics - Flaticon</a>
+<a href="https://www.flaticon.com/br/icones-gratis/academia" title="academia ícones">Academia ícones criados por Freepik - Flaticon</a>
+-->
 </body>
 </html>
