@@ -23,7 +23,7 @@ function linguagens(valor){
     }else if(valor == "c"){
         imagem.src ='imagens/letra-c.png'
         imagem.alt ='Linguagem C'
-        desc.innerHTML = 'Atualmente estou tendo aulas de Praticas profissionais utilizando <strong>Linguagem C </strong>, dentro dessa diciplina estou aprendendo funcionalidades dessa linguagem e logica de programação, alguns programas desenvolvidos podem ser visualizados <a href="https://github.com/EversonHenr1/exec_Ling_C">aqui</a>'
+        desc.innerHTML = 'Atualmente estou tendo aulas de Praticas profissionais utilizando <strong>Linguagem C </strong>, dentro dessa diciplina estou aprendendo funcionalidades dessa linguagem e logica de programação, alguns programas desenvolvidos podem ser visualizados <a href="https://github.com/EversonHenr1/exec_Ling_C" target="_blank">aqui</a>'
     }else if(valor == "sql"){
         imagem.src ='imagens/servidor-sql.png'
         imagem.alt ='Banco de Dados SQL'
@@ -31,7 +31,7 @@ function linguagens(valor){
     }else if(valor == "xml"){
         imagem.src ='imagens/xml.png'
         imagem.alt ='xml'
-        desc.innerHTML ='Com <strong>Xml</strong> desenvolvi um layout inteiro de uma aplicação movel que pode ser visualizada <a href="https://github.com/EversonHenr1/Multiplica">aqui</a>.<br> utilizando <strong>Android Studio </strong> aprendir conceitos de layout, drawable, Fragments.'
+        desc.innerHTML ='Com <strong>Xml</strong> desenvolvi um layout inteiro de uma aplicação movel que pode ser visualizada <a href="https://github.com/EversonHenr1/Multiplica target="_blank"">aqui</a>.<br> utilizando <strong>Android Studio </strong> aprendir conceitos de layout, drawable, Fragments.'
     }else if(valor == "java"){
         imagem.src ='imagens/java.png'
         imagem.alt = 'Java/Android'
