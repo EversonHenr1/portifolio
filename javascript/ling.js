@@ -105,8 +105,8 @@ function parecer(menu){
         profissional.style.display="block"
         btn.innerHTML = "Formações e Experiencias <i class='fa fa-plus-circle' aria-hidden='true'></i>"
     }
-   
-    
+
+
     
     
     
