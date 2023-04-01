@@ -31,7 +31,7 @@ function linguagens(valor){
     }else if(valor == "xml"){
         imagem.src ='imagens/xml.png'
         imagem.alt ='xml'
-        desc.innerHTML ='Com <strong>Xml</strong> desenvolvi um layout inteiro de uma aplicação movel que pode ser visualizada <a href="https://github.com/EversonHenr1/Multiplica target="_blank"">aqui</a>.<br> utilizando <strong>Android Studio </strong> aprendir conceitos de layout, drawable, Fragments.'
+        desc.innerHTML ='Com <strong>Xml</strong> desenvolvi um layout inteiro de uma aplicação movel que pode ser visualizada <a href="https://github.com/EversonHenr1/Multiplica" target="_blank">aqui</a>.<br> utilizando <strong>Android Studio </strong> aprendir conceitos de layout, drawable, Fragments.'
     }else if(valor == "java"){
         imagem.src ='imagens/java.png'
         imagem.alt = 'Java/Android'
