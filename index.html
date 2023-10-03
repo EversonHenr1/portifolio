@@ -5,186 +5,236 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Everson Henrique</title>
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css" media="all">
-    <link rel="stylesheet" href="css/print.css" media="print">
-    <link rel="stylesheet" href="css/mediaquery.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Icones.. -->
+    <link rel="shortcut icon" href="./imagens/favicon/favicon.ico" type="image/x-icon">
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="./css/style.css" media="all">
+    <!-- MediaQuery (CSS) -->
+    <link rel="stylesheet" href="./css/mediaQuery/style.css">
+    <!-- Biblioteca para icones ( Awesome 4 )-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <main>
-         
-         <header>
-            <img src="imagens/perfil.jpg" alt="Foto de Perfil">
-        </header>
-        <section id="perfil">
-            <h1>Everson Henrique da Silva <i class="fa fa-code" aria-hidden="true" style="display: none;"></i></h1>
-            <span id="bar"  style="display: none;"><abbr title="Analise e Desenvolvimento de Sistemas" id="ads"></abbr>|</span>
-            <p><abbr title="Analise e Desenvolvimento de Sistemas">&lt; Estudante ADS &gt;</abbr></p>
-            <ul>
-                <li><i class=" fa fa-user-o "></i>Solteiro</li>
-                <li><i class=" fa fa-calendar-o"></i>04/12/2003</li>
-                <li><i class=" fa fa-phone"></i>(11) 95410-8044</li>
-                <li style="line-height: 20px;"><i class="fa fa-envelope-o"></i>eversonhenriquepro781@gmail.com</li>
-                <li><i class=" fa fa-map-marker"></i>07161-460</li>
-                
-            </ul>
-            <a href="#sobre" class="button" target="_self">Decubra +</a>
-        </section>
-        <section id="linguagens">
-            <nav>
-                <a href="#projetos" target="_self">Projetos</a>|
-                <a href="#sobre" target="_self" >Sobre</a>|
-                <a href="#experiencia" target="_self" onclick="parecer('visivel')">Experiencias</a>
-            </nav> 
-            <h1>Linguagens</h1>
-            
-            
-            <img src="imagens/seta-para-baixo.png" alt="Seta para Baixo" id="ling-img">
-            <p id="ling-descricao">Por gentiliza, selecione uma opção abaixo para <strong>consumir mais</strong> conteúdo. </p>
-            <p id="select">
-                <label for="ling" id="labelL">Linguagens: </label>
-                <select name="linguagens" id="ling" onchange="linguagens(this.value)">
-                    <option value=""></option>
-                    <option value="html">Html</option>
-                    <option value="css">Css</option>
-                    <option value="js">Java Script</option>
-                    <option value="c">Linguagem C</option>
-                    <option value="sql">Banco de dados SQL</option>
-                    <option value="xml">Xml</option>
-                    <option value="java">Java</option>
-                </select>
-            </p>
+        <!-- Menu de Barras -->
+        <div id="barras" style="display: none;">
+            <div class="menu"></div>
+            <div class="menu"></div>
+            <div class="menu"></div>
+        </div>
+        <!-- Menu Suspenso fixo -->
+        <nav id="menu" >
             <div>
-                <img src="imagens/html-5 64x.png" alt="botão html" onclick="linguagens('html')">
-                <img src="imagens/css 64x.png" alt="botão css" onclick="linguagens('css')">
-                <img src="imagens/js 64x.png" alt="botão Javascript" onclick="linguagens('js')">
-                <img src="imagens/letra-c 64x.png" alt="botão Linguagem C" onclick="linguagens('c')">
-                <img src="imagens/xml 64x.png" alt="botão Xml" onclick="linguagens('xml')">
-                <img src="imagens/java 64x.png" alt="botão Java" onclick="linguagens('java')">
-                <img src="imagens/servidor-sql 64x.png" alt="botão SQL" onclick="linguagens('sql')">
+                <a href="#sobre" target="_self">sobre mim</a>
+                <a href="#experi" target="_self">experiências</a>
+                <a href="#ling" target="_self">habilidades</a>
+                <a href="#port" target="_self">projetos</a>
+                <a href="#tittle-cont" target="_self">contato</a>
             </div>
-       </section> 
-        <section id="projetos">
-            <h1>Projetos</h1>
-            <div id="container-proj">
-                <figure><img src="imagens/z.png" alt="Projeto Zoologico Guarulhos" class="item_P" style="background-color: #0D4161;"><figcaption>Zoologico de<br>Guarulhos<p style="display: none;">Um dos meus projetos durante a faculdade foi desenvolver um site reformulado para <strong>Zoologico de Guarulhos</strong>.<br> Linguagem Utilizandas : <strong>HTML, CSS</strong></p></figcaption><a href="https://eversonhenr1.github.io/site_Zoologico_Guarulhos/Zoologico/" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
-                <figure><img src="imagens/academia (1).png" alt="Projeto Cp Fitness" class="item_P" style="background-image: linear-gradient(brown 50%,rgb(10, 10, 10) 50%);"><figcaption>Cp Fitness<p style="display: none; ">outro projeto desenvolvido por mim foi: <strong>Site Cp Fitness</strong> , utilizando: <strong>HTML, Css, Javascript, SQL</strong> o ultimo sendo programado com a ferramenta <strong>xamp</strong></p></figcaption><a href="https://eversonhenr1.github.io/site_Cp_Fitness/Home/" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
-                <figure><img src="imagens/z_refurmulado.png" alt="Projeto Zoologico Guarulhos (reformulado)" style="background-color: #007C76;" class="item_P"><figcaption>Zoo<br>(reformulado)<p style="display: none;">Como durante a criação do site anterior não possuia os devidos conhecimentos de programação estou desenvolvendo uma <strong>reformulação</strong> do mesmo, onde quesitos de responsividade e interação serão mais desenvolvidos</p></figcaption><a href="https://github.com/EversonHenr1/Cp_fitness_Remake/blob/main/Captura%20de%20tela%202023-03-31%20212021.png" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
-                <figure><img src="imagens/cp_reformulado.png" alt="Projeto Cp Fitness (reformulado)" style="background-color: rgb(240, 14, 14);" class="item_P"><figcaption>Cp Fitness<br>(reformulado)<p style="display: none;">Esse nova versão do site terá elementos de <strong>responsividade</strong> é mais informações do <strong>banco de dados</strong> , além de um <strong>design melhorado</strong></p></figcaption><a href="#" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></figure>
-                <figure><img src="imagens/letra-m.png" alt="Projeto5 Multiplica" class="item_P" style="background-color: #2AAFB3;"><figcaption>Multiplica<p style="display: none;">Atualmente estou densenvolvendo um aplicativo movél de finanças, utilizando: <strong>Java , XML</strong> no <strong>Android Studio</strong> o mesmo já se encontra com todas as intefaces graficas funcionando</p></figcaption><a href="https://github.com/EversonHenr1/Multiplica" target="_blank" rel="next"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></a></a></figure>
-            </div>
-        </section>   
-         <section id="experiencia">
-            <h1 id="btn_show" onclick="parecer()" style="display: none;">Formações e Experiencias  <i class="fa fa-minus-circle" aria-hidden="true"></i></h1>
-            <div id="formacao" >
-                <h1 >Formação Acâdemica </i> </h1>
-                <ul>
-                    <li>
-                        Ensino Superior - Tecnólogo
-                        <p><strong>Centro universitario Eniac</strong></p>
-                        <p>Analise e desenvolvimento de sistemas - TI - Conclusão 2024</p>
-                    </li>
-                    <li>
-                        Ensino Médio - Completo
-                        <p><strong>Escola Estadual Prof.a Idaliana Ladeira Ferreira</strong>
-                        </p>
-                    </li>
-                    <h1>Cursos Extracurriculares</h1>
-                    <li>
-                        Microsoft Word
-                        <p>Instituição <strong>Microlins</strong> - (Concluido)
-                        </p>
-                    </li>
-                    <li>
-                        Microsoft Excel
-                        <p>Instituição <strong>Microlins</strong> - (Concluido)
-                        </p>
-                    </li>
-                    <li>
-                        Departamento Pessoal
-                        <p>Instituição <strong>Microlins</strong> - (Concluido)
-                        </p>
-                    </li>
-                    <li>
-                        Rotinas Administrativas
-                        <p>Instituição <strong>Microlins</strong> - (Concluido)
-                        </p>
-                    </li>
-                </ul>
-            </div> 
-            <div id="profissional" >
-                <h1>Experiencias Profissionais</h1>
-                <ul>
-                    <li>
-                        Via Pajuçara
-                        <p><strong>Cargo: </strong> Jovem aprendiz administrativo</p>
-                        <p><strong>Período: </strong> 21/02/2022 a 13/01/2023   (Concluido)</p>
-                    </li>
-                    <li>
-                        X supermercado
-                        <p><strong>Cargo: </strong>Auxiliar geral Estagiario</p>
-                        <p><strong>Período: </strong> 13/04/2021 a 31/12/2021   (Concluido)</p>
-                    </li>
-                </ul>
-                
-
-            </div> 
-            
-            
-            
-        </section>  
-        <section id="sobre">
-            <div>
-                <h1>Conheça Mais</h1>
-                <p>Tenho 19 anos e dentro do mercado de trabalho consegui desenvolver algumas habilidades como, <strong>Comunicação assertiva</strong>, <strong>Pro-atividade</strong>, <strong>Resiliencia</strong>; essas habilidade foram criadas durante meu ultimo emprego na transportadora <strong>Via Pajuçara</strong> e <strong>Supermercado X</strong>; ambos foram oferecidos opotunidades para dar seguimento como colaborador efetivo, mas devido divergencia de horarios não pude prosseguir.</p>
-                <br>
-                <p>Mas minha vocação sempre foi voltada para a areá de TI, na qual realizo  faculdade de <strong>Analise e Desenvolvimento de Sistemas</strong>; como apresentado acima, tenho conhecimento de algumas linguagens de programação e também domino alguns programas como: <strong>Word</strong>, <strong>Excel</strong>, <strong>Power Point</strong> e <strong>Canvas</strong>; e sigo buscando mais conhecimento para alcançar meus objetivos.</p>
-            <a href="dowloads/curriculo.rar" download="dowloads/curriculo.rar" type="	application/x-rar-compressed" class="button">Dowload Curriculo <i class="fa fa-download" aria-hidden="true"></i></a>
-            </div>
-            
-            <article id="container-objetivo">
-                <h1>Objetivos</h1>
-                <aside>
-                    <div><p>possuindo tais habilidades tenho como objetivo, embarcar em uma nova oportunidade onde possa me aperfeiçoar cada vez mais na area de (TI)  como um Estagiario ou Junior.  </p><span><i class="fa fa-hand-pointer-o" aria-hidden="true"></i></span> <h2>Objetivos</h2></div>
-                </aside>
-            </article>
-        </section>
-        
-        
-    </main>
-    <footer>
-        <h1>
-            Social
-        </h1>
-                <a href="https://www.facebook.com/eversoHenrique" target="_blank" rel="external"><i class="fa fa-facebook"></i></a>
+            <span style="display: none;">
+                <a href="https://www.facebook.com/eversoHenrique" target="_blank" rel="external">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/EversonHenr1/" target="_blank" rel="external">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/everson_henr1/" target="_blank" rel="external">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/everson-henrique-da-silva/" target="_blank" rel="external">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </span>
+        </nav>
+        <section id="home" >
+            <header>
+                <div>
+                    <img src="./imagens/logo/logo_180px.png" alt="logo" class="logo">
+                </div>
+                <div class="init-hidden">
+                    <a href="#sobre" target="_self">sobre mim</a>
+                    <a href="#experi" target="_self">experiências</a>
+                    <a href="#ling" target="_self">habilidades</a>
+                    <a href="#port" target="_self">projetos</a>
+                    <a href="#tittle-cont" target="_self">contato</a>
+                </div>
+            </header>
+            <div class="social fa-stack fa-lg"> 
+                <a href="https://www.facebook.com/eversoHenrique" target="_blank" rel="external"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                 <a href="https://github.com/EversonHenr1/" target="_blank" rel="external"><i class="fa fa-github"></i></a>
                 <a href="https://www.instagram.com/everson_henr1/" target="_blank" rel="external"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/everson-henrique-da-silva/" target="_blank" rel="external"><i class="fa fa-linkedin"></i></a>
-               
-        <div>
-            <p>Portifolio inspirado  no site <strong>Spotify</strong></p>
-        </div>
+            </div>
+            <article>
+                <h1>Everson Henrique da Silva <i class="fa fa-code" aria-hidden="true" style="color: #1ed760;"></i></h1>
+                <p id="legenda"></p>
+                <div class="containerBtn">
+                    <div class="btnDiv">
+                        <a href="https://github.com/EversonHenr1/" target="_blank" rel="external" class="btn_rotation"><i class="fa fa-github fa-lg" style="color: white;"></i> GitHub</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="perfil">
+            <h2 id="sobre">     
+                <span>
+                    <i class="fa fa-times-circle fa-lg" aria-hidden="true"></i><i class="fa fa-times-circle" aria-hidden="true" style="color: #1ed760;"></i>
+                </span>
+                Sobre 
+            </h2>
+            <div id="container-foto" class="init-hidden">
+                <img src="./imagens/eu.jpg" alt="Foto Everson Henrique" id="eu">
+            </div>
+            <article class="init-hidden">
+                <p>Olá meu nome é Everson Henrique, tenho 19 anos já trabalhei como jovem aprendiz administrativo e no supermercado X; durante minha jornada percebi que deveria seguir na areá de tecnologia pela qual tenho paixão e muita vontade de aprender, curso Analise e Desenvolvimento de Sistemas no centro universitário Eniac; durante todas minhas experiências busquei sempre aprender diversas habilidades como: comunicação assertiva, pro-atividade, agilidade, pensamento critico. E hoje em dia busco minha primeira oportunidade de entrar na areá de Tecnologia.</p>
+                <ul>
+                    <li><strong>nome: </strong> Everson Henrique</li>
+                    <li><strong>idade: </strong>19 anos</li>
+                    <li><strong style="padding-right: 7px;">email:</strong>eversonhenriquepro781@gmail.com</li>
+                    <li><strong>cel: </strong>(11) 95410-8044</li>
+                    <li><strong>cidade: </strong>Guarulhos - SP</li>
+                </ul>
+                <a href="../newPortifolio/dowload/curriculo ( Everson Henrique da Silva ).rar" class="btn_green init-hidden" style="z-index: 0;"  type="application/x-rar-compressed" id="btn_curriculo">
+                    curriculo   
+                    <i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i>
+                </a>
+            </article>
+            <div class="onda">
+                <img src="./imagens/svg/wave.svg" alt="fundo em formato de onda">
+            </div>
+        </section>
+        <section id="experiencia">
+            <article>
+                <aside id="containerEX" class="init-hidden">
+                    <h2 id="experi">
+                        <span>
+                            <i class="fa fa-times-circle" aria-hidden="true" style="color: #1ed760;"></i><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i>
+                        </span>
+                        Experiências
+                    </h2>
+                    <h3>Empresas</h3>
+                    <ul id="lista-ex">
+                        <li class="btnHoverEX">New</li>
+                        <li>Núcleo</li>
+                        <li>Pajuçara</li>
+                        <li>XSupermecados</li>
+                    </ul>
+                </aside>
+                <aside id="containerDesc" class="init-hidden">
+                    <div>
+                    <h3 id="titulo">Estagiario ou Junior TI</h3>
+                    <span id="data">
+                        coming soon
+                    </span>
+                    <p id="text">Estou em busca de uma oportunidade na qual possa adquirir novas experiências, como ingressante na área de TI, na qual curso faculade e conheço algumas linguagens como apresentado abaixo;</p>
+                    <a href="" style="display: none;" class="btn_green" id="site" target="_blank">site <i class="fa fa-external-link" aria-hidden="true"></i></a> 
+                    <a href="" style="display: none;"  class="btn_green" id="linkedin" target="_blank"> linkedin<i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    </div>
+                </aside>
+            </article>
+        </section>
+        <section id="habilidades">
+            <h2 id="ling">
+                <span>
+                    <i class="fa fa-times-circle fa-lg" aria-hidden="true" ></i>
+                    <i class="fa fa-times-circle" aria-hidden="true" ></i>
+                    <i class="fa fa-times-circle" aria-hidden="true" ></i>
+                    <i class="fa fa-times-circle fa-lg" aria-hidden="true" style="margin-left: 5px;"></i>
+                </span>
+                Habilidades
+            </h2>
+            <article id="container-graficos" class="init-hidden">
+                <i class="fa fa-times-circle fa-2x" aria-hidden="true" style="float: right;"></i>
+                <aside>
+                    <div id="tempHabilidade">
+                        <span></span>
+                        <p></p>
+                        <div class="bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>  
+                </aside>
+                <i class="fa fa-times-circle fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+            </article>
+        </section>
+        <section id="projetos">
+            <h2 id="port">
+                <span>
+                    <i class="fa fa-times-circle" aria-hidden="true" style="color: #1ed760;"></i><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i>
+                </span>
+                Portifolio
+            </h2>
+            <article id="paiProj">
+                <div class="projeto  init-hidden" id="projTemp">
+                    <a href="#" target="_blank">
+                        <div>
+                            <i class="ii fa" aria-hidden="true"></i>
+                            <h4></h4>
+                            <p></p>
+                            
+                        </div>
+                        
+                    </a> 
+                    <div class="tecnologias"></div>
+                </div> 
+            </article> 
+            
+        </section>
+        <section id="contato">
+            <h2 id="tittle-cont">
+                <span>
+                    <i class="fa fa-times-circle" aria-hidden="true" style="color: #1ed760;"></i><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i>
+                </span>
+                Contato
+            </h2>
+            <div id="Container-contact">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <h3>Entre em contato</h3>
+                    <!-- Manda dados para uma api, que irá mandar email para mim -->
+                    <input type="hidden" name="accessKey" value="ac2b0b24-0fe2-4d86-9ad0-beb9ab12cdff"> <!-- Key para utilizar a Api -->
+                    <input type="hidden" name="redirectTo" value="https://eversonhenr1.github.io/newPortifolio/newPortifolio/success"> <!-- Redirecionamento após a mensagem -->
+                    <div>
+                        <label for="name">Digite seu nome:</label>
+                        <input type="text"   id="name" name="name" maxlength="120" minlength="5" autocomplete="name">
+                        <legend> <i class="fa" aria-hidden="true" ></i></legend>
+                    </div>
+                    <div>
+                        <label for="email">Digite seu email:</label>
+                        <input type="email" name="email" id="email" maxlength="130" minlength="5"  autocomplete="email"  />
+                        <legend> <i class="fa" aria-hidden="true"></i></legend>
+                    </div>
+                    <div>
+                        <label for="message">Digite sua mensagem de contato:</label>
+                        <textarea name="message" id="message" maxlength="300" minlength="5"></textarea>
+                        <legend> <i class="fa" aria-hidden="true" ></i></legend>
+                    </div>
+                    <div>
+                        <input type="submit"  value="Enviar"/>
+                    </div>                    
+                </form>
+                 <div class="onda" style="z-index: 1;">
+                <img src="./imagens/svg/wave.svg" alt="imagem de fundo com formato de onda">
+            </div> 
+            </div>
+            
+        </section>
+        <footer>
+            <h3 class="init-hidden">Everson Henrique da Silva</h3>
+            <div class="init-hidden">
+                <h4>Imagem</h4>
+                <a href="https://br.freepik.com/vetores-gratis/fundo-desfocado-em-tom-pastel-de-pessego-suave_16359104.htm#query=texturas%20degrade&position=18&from_view=search&track=ais" target="_blank">Imagem de rawpixel.com no Freepik </a> 
+            </div>
+            <h4 class="init-hidden">Social</h4>
+            <a href="https://www.facebook.com/eversoHenrique" target="_blank" rel="external"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://github.com/EversonHenr1/" target="_blank" rel="external"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/everson_henr1/" target="_blank" rel="external"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/everson-henrique-da-silva/" target="_blank" rel="external"><i class="fa fa-linkedin"></i></a>
+            <p class="init-hidden">© Copyright 2023 - Everson Henrique - Todos os direitos Reservados.</p>
+        </footer>
         
-    </footer>
-    <script src="javascript/ling.js"></script>
-    <!--  
+    </main>
     
-        Icones Utilizados
-
-    <a href="https://www.flaticon.com/br/icones-gratis/html" title="html ícones">Html ícones criados por Pixel perfect - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/css" title="css ícones">Css ícones criados por Pixel perfect - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/javascript" title="javascript ícones">Javascript ícones criados por Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/letra-c" title="letra c ícones">Letra c ícones criados por Hight Quality Icons - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/pitao" title="pitão ícones">Pitão ícones criados por Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/java" title="java ícones">Java ícones criados por Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/sql" title="sql ícones">Sql ícones criados por juicy_fish - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/academia" title="academia ícones">Academia ícones criados por Aldo Cervantes - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/formato-xml" title="formato xml ícones">Formato xml ícones criados por riajulislam - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/letra-m" title="letra-m ícones">Letra-m ícones criados por popo2021 - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/z" title="z ícones">Z ícones criados por Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/trabalho-em-progresso" title="trabalho em progresso ícones">Trabalho em progresso ícones criados por Aranagraphics - Flaticon</a>
-<a href="https://www.flaticon.com/br/icones-gratis/academia" title="academia ícones">Academia ícones criados por Freepik - Flaticon</a>
--->
+   <script src="./javaScript/legenda.js" defer></script>
+    <script src="./javaScript/index.js" ></script>
 </body>
 </html>
